@@ -1,0 +1,16 @@
+custom_rules:
+  - id: Polyfill supply chain compromise
+    description: >-
+      The polyfill.js is a popular open source library to support older
+      browsers. This domain was caught injecting malware on mobile devices via
+      any site that embeds cdn.polyfill.io.
+    severity: high
+    cwe:
+      - CWE-506
+    fix_analysis: Use alternatives provided at HTTPS cdnjs.cloudflare.com SLASH polyfill
+    rule_code: >-
+      StringLiteral<~".*https://cdn.polyfill.io.*">
+    languages:
+      - html
+      - javascript
+      - php
