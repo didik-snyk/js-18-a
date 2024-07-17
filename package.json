@@ -180,7 +180,7 @@
     "swagger-ui-express": "^5.0.0",
     "ts-node-dev": "^1.1.6",
     "unzipper": "0.9.15",
-    "web3": "^4.0.3",
+    "web3": "^4.10.0",
     "winston": "^3.3.3",
     "yaml-schema-validator": "^1.2.2",
     "z85": "^0.0.2"
